@@ -1,2 +1,2 @@
-# Projet-Dataviz-A-ssatou-GUEYE-Plateforme-SGA
+# Projet-Dataviz-Aissatou-GUEYE-KASSI-MAMADOU-Plateforme-SGA
 Système de Gestion Académique
