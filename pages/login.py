@@ -50,21 +50,6 @@ def layout():
 
             html.Button("Se connecter",id="btn-login",className="btn-login-submit",n_clicks=0),
 
-            # Comptes de démo
-            html.Div([
-                html.Div("Comptes de démonstration :", style={
-                    "fontSize":"11px","fontWeight":"700","color":"rgba(255,255,255,0.30)",
-                    "textTransform":"uppercase","letterSpacing":"0.09em","marginBottom":"10px","marginTop":"20px"
-                }),
-                *[html.Div([
-                    html.Span(f"{nom} — ",style={"color":"rgba(255,255,255,0.40)","fontSize":"12px"}),
-                    html.Code(f"{u} / {p}",style={
-                        "fontSize":"11.5px","color":"var(--mint)",
-                        "background":"rgba(15,252,190,0.08)","padding":"2px 7px","borderRadius":"5px"
-                    }),
-                ],style={"marginBottom":"5px"}) for nom,u,p in DEMO_ACCOUNTS]
-            ]),
-
             html.A("← Retour à l'accueil",href="/",className="login-back"),
             dcc.Location(id="login-redirect", refresh=True),
         ],className="login-card"),
